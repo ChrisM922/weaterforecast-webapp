@@ -52,7 +52,7 @@ export default function Home() {
                 placeholder='Search City'
               />
             </div>
-            <button className='mr-[25px]' onClick={fetchWeather}>
+            <button className='mr-[70px]' onClick={fetchWeather}>
               <BsSearch size={30} />
             </button>
           </form>
