@@ -26,7 +26,7 @@ export default function Home() {
     return <Spinner />;
   } else {
     return (
-      <div>
+      <div className='h-full'>
         {/* Overlay */}
         <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/20 z-[1]' />
 
@@ -52,7 +52,7 @@ export default function Home() {
                 placeholder='Search City'
               />
             </div>
-            <button onClick={fetchWeather}>
+            <button className='mr-5' onClick={fetchWeather}>
               <BsSearch size={30} />
             </button>
           </form>
