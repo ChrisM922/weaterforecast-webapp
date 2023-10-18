@@ -19,7 +19,7 @@ const watherData = ({ data }) => {
         </div>
         <p className='text-9xl'>{((data.main.temp - 32) * 5 / 9).toFixed(0)}&#176;</p>
       </div>
-      <div className='relative bg-black/75 p-8 rounded-md'>
+      <div className='relative bg-black/75 p-8 rounded-md mt-5'>
         <p className='text-2xl text-center pb-6'>Weather in {data.name}</p>
         <div className='flex justify-between text-center'>
           <div>
