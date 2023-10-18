@@ -6,7 +6,7 @@ const watherData = ({ data }) => {
   console.log(`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`)
 
   return (
-    <div className='relative flex flex-col justify-between max-w-[350px] w-full h-[90vh] m-auto p-4 text-gray-300 z-30'>
+    <div className='relative flex flex-col justify-between max-w-[350px] w-full mt-[-50px] p-4 text-gray-300 z-30'>
       <div className='relative flex justify-between pt-12'>
         <div className='flex flex-col items-center'>
           <Image

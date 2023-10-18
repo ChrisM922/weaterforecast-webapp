@@ -59,7 +59,9 @@ export default function Home() {
         </div>
 
         {/** Weather */}
-        {weather.main && <Weather data={weather} />}
+        <div className='max-h-[25%]'>
+          {weather.main && <Weather data={weather} />}
+        </div>
       </div>
     );
   }
