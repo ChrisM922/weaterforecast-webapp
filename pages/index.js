@@ -5,8 +5,10 @@ import Image from "next/image";
 import { Input } from "postcss";
 import Weather from "@/components/Weather";
 import Spinner from "@/components/Spinner";
+import Head from 'next/head';
+
 export default function Home() {
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState(" 1");
   const [weather, setWeather] = useState({});
   const [loading, setLoading] = useState(false);
 
@@ -27,6 +29,19 @@ export default function Home() {
   } else {
     return (
       <div className='h-full'>
+        <head>
+          <title>Weather forecast - by Chris Mace</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+          <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+          <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+          <link rel="apple-touch-icon" href="/apple-touch-icon-57x57.png" />
+          <link rel="apple-touch-startup-image" href="/splash-startup.png" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="HandheldFriendly" content="true" />
+          <meta name="MobileOptimized" content="width" />
+        </head>
         {/* Overlay */}
         <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/20 z-[1]' />
 
