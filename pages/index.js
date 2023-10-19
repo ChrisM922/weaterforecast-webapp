@@ -29,8 +29,9 @@ export default function Home() {
   } else {
     return (
       <div className='h-full'>
-        <head>
+        <header>
           <title>Weather forecast - by Chris Mace</title>
+          <link rel="icon" type="image/x-icon" href="/favicon.ico" />
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -41,7 +42,7 @@ export default function Home() {
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="HandheldFriendly" content="true" />
           <meta name="MobileOptimized" content="width" />
-        </head>
+        </header>
         {/* Overlay */}
         <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/20 z-[1]' />
 
